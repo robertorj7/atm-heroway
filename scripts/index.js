@@ -21,13 +21,7 @@ buttonClear.addEventListener('click', () => {
 
 buttonConfirm.addEventListener('click', () => {
   const value = Number(input.value);
-  let rest = 0;
-
-  let withdrawText = [];
-  let hundredNotes = 0;
-  let fiftyNotes = 0;
-  let twentyNotes = 0;
-  let tenNotes = 0;
+  let withdrawText = [];    
 
   withdrawInput.innerHTML = "";
   
@@ -36,22 +30,22 @@ buttonConfirm.addEventListener('click', () => {
     return;
   }  
 
-  hundredNotes = Math.floor(value / 100);
-  rest = value % 100;    
+  let hundredNotes = Math.floor(value / 100);
+  let rest = value % 100;    
   printNotes(hundredNotes, "hundred");
 
   if (rest !== 0) {
-    fiftyNotes = Math.floor(rest / 50);
+    let fiftyNotes = Math.floor(rest / 50);
     rest %= 50;
     printNotes(fiftyNotes, "fifty");
 
     if (rest !== 0) {
-      twentyNotes = Math.floor(rest / 20);
+      let twentyNotes = Math.floor(rest / 20);
       rest %= 20;
       printNotes(twentyNotes, "twenty");
 
       if (rest !== 0) {
-        tenNotes = Math.floor(rest / 10);
+        let tenNotes = Math.floor(rest / 10);
         rest %= 10;        
         printNotes(tenNotes, "ten");
 
