@@ -36,3 +36,11 @@ Desenvolva uma aplicação que simule a entrega de notas quando um cliente efetu
     - Entrada: NULL
     - Saída: Erro de valor nulo
   ```
+  
+#### Tecnologias usadas:
+  * HTML, CSS e Javascript
+
+#### Passos:
+
+1. Clonar a pasta do repositório;
+2. Abrir arquivo `index.html` no navegador. 
